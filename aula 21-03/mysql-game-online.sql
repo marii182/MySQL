@@ -61,7 +61,7 @@ SELECT * FROM tb_personagens WHERE poder_defesa BETWEEN 1000 AND 2000;
 
 SELECT @@collation_database;
 
-SELECT * FROM tb_personagens WHERE nome_personagem LIKE "c%";
+SELECT * FROM tb_personagens WHERE nome_personagem LIKE "%c%";
 
 SELECT nome_personagem, nivel, poder_ataque, poder_defesa, tb_classes.nome_classe
 FROM tb_personagens INNER JOIN tb_classes 
